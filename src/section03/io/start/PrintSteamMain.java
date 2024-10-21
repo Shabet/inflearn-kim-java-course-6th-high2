@@ -1,11 +1,9 @@
 package section03.io.start;
 
-<<<<<<< HEAD
 import java.io.IOException;
 import java.io.PrintStream;
-import java.nio.charset.StandardCharsets;
 
-import static java.nio.charset.StandardCharsets.*;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class PrintSteamMain {
 
@@ -17,11 +15,6 @@ public class PrintSteamMain {
         byte[] bytes = "Hello!\n".getBytes(UTF_8);
         printStream.write(bytes);
         printStream.println("Print!");
-=======
-public class PrintSteamMain {
-
-    public static void main(String[] args) {
->>>>>>> origin/main
 
     }
 }
