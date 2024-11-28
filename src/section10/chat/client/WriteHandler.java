@@ -28,11 +28,11 @@ public class WriteHandler implements Runnable {
         try {
             String username = inputUsername(scanner);
             output.writeUTF("/join" + DELIMETER + username);
-            System.out.println("username = " + username);
+//            System.out.println("username = " + username);
 
             while (true) {
                 String toSend = scanner.nextLine(); // 블로킹
-                System.out.println("toSend = " + toSend);
+//                System.out.println("toSend = " + toSend);
                 if (toSend.isEmpty()) {
                     continue;
                 }

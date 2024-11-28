@@ -2,7 +2,7 @@ package section10.chat.server;
 
 import java.io.IOException;
 
-public class ServerMain {
+public class ServerMainV2 {
 
     private static final int PORT = 12345;
 
@@ -10,7 +10,7 @@ public class ServerMain {
         SessionManager sessionManager = new SessionManager();
 
         // CommandManager 점진적으로 변경 예정
-        CommandManagerV1 commandManager = new CommandManagerV1(sessionManager);
+        CommandManager commandManager = new CommandManagerV2(sessionManager);
 
         Server server = new Server(PORT, commandManager, sessionManager);
         server.start();
