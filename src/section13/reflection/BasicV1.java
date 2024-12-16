@@ -17,7 +17,7 @@ public class BasicV1 {
         System.out.println("basicDataClass2 = " + basicDataClass2);
 
         // 3. 문자로 찾기
-        String className = "section12.reflection.data.BasicData"; // 패키지명 주의
+        String className = "section13.reflection.data.BasicData"; // 패키지명 주의
         Class<?> basicDataClass3 = Class.forName(className);
         System.out.println("basicDataClass3 = " + basicDataClass3);
     }
